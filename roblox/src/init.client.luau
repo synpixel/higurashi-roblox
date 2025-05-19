@@ -2,7 +2,7 @@ local SoundService = game:GetService("SoundService")
 local TweenService = game:GetService("TweenService")
 local disable_roblox_features = require(script.disable_roblox_features)
 local load_assets = require(script.load_assets)
-local run = require(script.run.onik_003)
+local run = require(script.run)
 local ui = require(script.ui)
 
 local assets = load_assets()
