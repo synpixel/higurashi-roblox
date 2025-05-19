@@ -1,0 +1,22 @@
+{
+  "name": "Higurashi When They Cry",
+  "emitLegacyScripts": false,
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "game": {
+        "$path": "./roblox/src",
+        "run": {
+          "$path": "./dist/run"
+        }
+      }
+    },
+
+    "Players": {
+      "$properties": {
+        "CharacterAutoLoads": false
+      }
+    }
+  }
+}

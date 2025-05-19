@@ -1,0 +1,15 @@
+name = "synpixel/higurashi"
+version = "0.1.0"
+private = true
+
+[target]
+environment = "lune"
+
+[engines]
+lune = "^0.8.9"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[dev_dependencies]
+rojo = { name = "pesde/rojo", version = "^7.5.1" }

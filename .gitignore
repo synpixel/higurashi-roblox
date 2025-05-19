@@ -1,0 +1,6 @@
+.pesde
+*_packages
+dist
+sourcemap.json
+build.rbxl
+build.rbxl.lock
