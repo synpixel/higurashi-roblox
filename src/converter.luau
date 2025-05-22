@@ -1,6 +1,6 @@
 local fix_script_name = require("./utils/fix-script-name")
 
-type Token =
+type LineTask =
 	{ kind: "call_function", fn: string, raw_args: string }
 	| { kind: "open_scope" }
 	| { kind: "close_scope" }
@@ -221,7 +221,7 @@ local function iter_declare_fn(source: string): () -> (string?, string, string)
 	return string.gmatch(source, "([%w_]+)%s+([%w_]+)%s*%(%s*%)%s*(%b{})") :: any
 end
 
-local function get_line_task(line: string): Token?
+local function get_line_task(line: string): LineTask?
 	line = string.match(line, "^%s*(.-)%s*$") :: string
 
 	do
